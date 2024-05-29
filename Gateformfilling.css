@@ -1,0 +1,22 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+form{
+	height: 700px;
+	width: 600px;
+	background-color: aqua;
+	margin-top: 70px;
+	margin-left: 650px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding-left: 150px;
+}
+button{
+	margin-top: 20px;
+	height: 30px;
+	width: 70px;
+	margin-bottom: 50px;
+	margin-left: 180px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="formstyle.css"/>
+  </head>
+  <body>
+  <marquee width="100%" behavior="scroll" bgcolor="pink" direction="right">
+    Last date of Registration is 01/02/2024 after that link will be closed !!!
+</marquee>
+    <h1 align="center"; style="color:blue;font-size:40px;">Gate Registration</h1>
+
+    <form action="#" method="post">
+      <div class="n">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+      </div>
+      <div class="e">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+      </div>
+      <div class="a">
+          <label for="age">Phone No:</label>
+          <input type="text" id="age" name="age" required>
+      </div>
+      <div class="g">
+          <label>Gender:</label>
+          <input type="radio" id="male" name="gender" value="male" required>
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female" required>
+          <label for="female">Female</label>
+      </div>
+      <div class="i">
+          <label>Paper:</label>
+          <input type="checkbox" id="coding" name="interests[]" value="CS">
+          <label for="coding">CS</label>
+          <input type="checkbox" id="reading" name="interests[]" value="ETC">
+          <label for="reading">ETC</label>
+          <input type="checkbox" id="traveling" name="interests[]" value="Mech">
+          <label for="traveling">Mech</label>
+      </div>
+      <div class="b">
+          <label for="birthdate">DOB:</label>
+          <input type="date" id="birthdate" name="birthdate" required>
+      </div>
+      <div class="c">
+          <label for="comments">Comments:</label>
+          <textarea id="comments" name="comments" rows="4"></textarea>
+      </div>
+      <button type="submit">Submit</button>
+  </form>
+  
+    <footer align="center">
+      <p>Indian Institute of Science, Bengaluru, Karnataka 560012</p>
+      <p>All Rights Reserved &copy 2003</p>
+    </footer>
+  </body>
+</html>

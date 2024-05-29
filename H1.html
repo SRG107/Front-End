@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Page</title>
+    <style>
+        .google{
+            width: 250px;
+            height: 100px;
+            display: block;
+            margin: auto;
+            padding: 10px;
+            margin-right: 10 px;
+        }
+        img {
+            width: 500px;
+            height: 300px;
+            display: block;
+            margin: auto;
+            padding: 10px;
+            margin-right: 10 px;
+        }
+        label {
+            display: inline-block;
+            width: 120px;
+            text-align: left;
+            
+        }
+        </style>
+</head>
+<body style="background-color: lightgrey;">
+    <img class="google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+    <hr>
+    <h1>Google Camp</h1><span>hr tag is used to get separation lines</span>
+    <hr>
+    <p>Get started with html </p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis suscipit alias consequatur odio numquam optio assumenda voluptatibus? Perferendis, sequi dolores consequuntur natus est ipsa expedita asperiores vitae aliquam consequatur earum?</p>
+    This text is separated by
+    <br>
+    br tag
+    <br>
+    <a href="https://www.google.com" target="_blank" title="This takes you to Google">Google</a>
+    <br>
+    <br>
+    <div style="background-color: rgb(76, 59, 175);">
+    <a href="https://www.animegeek.com/tower-of-god-season-2-release-date-kami-no-tou-season-2-2024/" target="_blank">
+        <img src="https://imgs.search.brave.com/p387fcS-5Z3DGEQVA711jD8AGB22xkMowwv-kmfZxeI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vd3d3LmFu/aW1lZ2Vlay5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjIv/MDgvVG93ZXItb2Yt/R29kLVNlYXNvbi0y/LWFuaW1lLWtleS12/aXN1YWwtQ3J1bmNo/eXJvbGwtRXhwby0y/MDIyLmpwZz9yZXNp/emU9NzgwLDQzOSZz/c2w9MQ" title="ToG Season 2" alt="ToG image"/>
+    </a>
+    </div>
+    <br>
+    <h2>Unordered List</h2>
+    <ul style="list-style: none;">
+        <li>pizza</li>
+        <li>cheese</li>
+        <li>salad</li>
+    </ul>
+    <ul style="list-style: circle;">
+        <li>pizza</li>
+        <li>cheese</li>
+        <li>salad</li>
+
+    <h2>Ordered List</h2>
+    <ol>
+        <li>pizza
+            <ol>
+                <li>pepperoni</li>
+                <li>cheese</li>
+                <li>sausage</li>
+            </ol>
+        </li>
+        <li>burger</li>
+        <li>salad
+            <ul>
+                <li>lettuce</li>
+                <li>tomato</li>
+                <li>onion</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h2>Description List</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hyper Text Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+        <dt>JS</dt>
+        <dd>JavaScript</dd>
+    </dl>
+
+    <h2>My Table</h2>
+    <table bgcolor="blue" style="text-align: center;">
+       <tr bgcolor="grey" >
+            <th width="100px">Sunday</th>
+            <th width="100px">Monday</th>
+            <th width="100px">Tuesday</th>
+            <th width="100px">Wednesday</th>
+            <th width="100px">Thursday</th>
+            <th width="100px">Friday</th>
+            <th width="100px">Saturday</th>
+       </tr>
+       <tr bgcolor="red">
+        <td>Closed</td>
+        <td>9-5</td>
+        <td>9-5</td>
+        <td>9-5</td>
+        <td>9-5</td>
+        <td>9-5</td>
+        <td>Closed</td>
+       </tr>
+
+    </table>
+    <br>
+    <br>
+
+    <h2>My Form</h2>
+    <form action="">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="8">
+        <br>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <br>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+        <br>
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" required>
+        <br>
+        <label for="search">Search:</label>
+        <input type="search" id="search" name="search" required>
+        <br>
+        <label for="number">Number:</label>
+        <input type="number" id="number" name="number" required>
+        <br>
+        <label for="file">File:</label>
+        <input type="file" id="file" name="file" required>
+        <br>
+        <label for="radio">Radio:</label>
+        <input type="radio" id="radio" name="radio" required>
+        <br>
+        <label for="checkbox">Checkbox:</label>
+        <input type="checkbox" id="checkbox" name="checkbox" required>
+        <br>
+        <label for="submit">Submit:</label>
+        <input type="submit" id="submit" name="submit" required>
+        <br>
+        <label for="reset">Reset:</label>
+        <input type="reset" id="reset" name="reset" required>
+    </form>
+
+</body>
+</html>
