@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        #progressbar {
+            width: 100%;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        #progress {
+            width: 0;
+            height: 20px;
+            background-color: green;
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                var text = $("textarea").val();
+                var length = text.length;
+                var percentage = (length / 200) * 100;
+                $('#progress').css('width', percentage + '%');
+            });
+        });
+    </script>
+</head>
+<body>
+    <textarea rows="4" cols="50"></textarea>
+    <br>
+    <button type="button">Calculate</button>
+    <div id="progressbar">
+        <div id="progress"></div>
+    </div>
+</body>
+</html>

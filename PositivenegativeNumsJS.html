@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSIT Department</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <script>
+       
+        function find()
+        {
+        var i;
+        var j;
+        var a;
+        const arr=[];
+        var p=0;
+        var n=0;
+        var z=0;
+        for(j=1;j<=10;j++)
+        {
+            a = prompt("Emter Number for "+j+" index ");
+            arr.push(parseInt(a));
+        }
+            for(i=0;i<arr.length;i++)
+            {
+                if(arr[i]<0)
+                {
+                    n++;
+                }
+                else if(arr[i]>0)
+                {
+                    p++;
+                }
+                else
+                {
+                    z++;
+                }
+            }
+            document.write(p+" positive numbers\n");
+            document.write(n+" negative numbers\n");
+            document.write(z+" zeroes\n");
+        }
+    </script>
+
+    <h1>
+        CLick here to find type of numbers
+    </h1>
+    <input type="button" value="Click" onclick="find()"/>
+
+
+<!-- Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+<!-- Footer -->
+<footer class="footer bg-dark text-white mt-5">
+  <div class="container text-center">
+    <span class="text-muted">CSIT Department &copy; 2024</span>
+  </div>
+</footer>

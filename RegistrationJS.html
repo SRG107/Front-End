@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reg.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1 style="color: #0da4e0; text-align: center;">Registration Form</h1>
+    <form style="text-align: center" onsubmit="return validateform()">
+        <label for="fname">Enter First Name:</label>
+        <input type="text" name="fname" id="fname">
+        <br/><br/>
+
+        <label for="lname">Enter Last Name:</label>
+        <input type="text" name="lname" id="lname">
+        <br/><br/>
+
+        <label for="pwd">Enter Password:</label>
+        <input type="password" name="pwd" id="pwd">
+        <br/><br/>
+
+        <label for="email1">Enter Email_ID:</label>
+        <input type="email" name="email1" id="email1">
+        <br/><br/>
+
+        <label for="mn">Enter Mobile Number:</label>
+        <input type="text" name="mn" id="mn">
+        <br/><br/>
+
+        <label for="add">Enter Address :</label>
+        <input type="text" name="add" id="add">
+        <br/><br/>
+
+        <div class="bu">
+            <button type="submit">Submit</button>
+            <br/><br/>
+        </div>
+    </form>
+
+    <script>
+        function validateform() {
+            var regName = /^[a-zA-Z]{6,}$/;
+            const pattern = /^\d{10}$/;
+            const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            let namev = document.getElementById("fname").value;
+            let Passwordv = document.getElementById("pwd").value;
+            let emailv = document.getElementById("email1").value;
+            let mnv = document.getElementById("mn").value;
+            let lnamev = document.getElementById("lname").value;
+            let addv = document.getElementById("add").value;
+
+            if (namev.length < 6 || !regName.test(namev)) {
+                alert("Name should have length 6 and alphabets only");
+                return false;
+            }
+            if (Passwordv.length < 6) {
+                alert("Password must be at least 6 characters long.");
+                return false;
+            }
+            if (!emailRegex.test(emailv)) {
+                alert("Enter valid Email!!");
+                return false;
+            }
+            if (!pattern.test(mnv)) {
+                alert("Number should have 10 digits only!");
+                return false;
+            }
+            if (lnamev.trim().length === 0) {
+                alert("Last name should not be empty");
+                return false;
+            }
+            if (addv.trim().length === 0) {
+                alert("Address should not be empty");
+                return false;
+            } else {
+                alert("Submitted Successfully");
+                document.write("Name is: " + namev);
+                document.write("<br>");
+                document.write("Password is: " + Passwordv);
+                document.write("<br>");
+                document.write("Email is: " + emailv);
+                document.write("<br>");
+                document.write("Mobile number is: " + mnv);
+                document.write("<br>");
+                document.write("Last Name is: " + lnamev);
+                document.write("<br>");
+                document.write("Address is: " + addv);
+                document.write("<br>");
+                return true;
+            }
+        }
+    </script>
+</body>
+</html>

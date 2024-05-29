@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var rowCount = $('#myTable tr').length;
+            var colCount = $('#myTable tr:first-child th').length;
+            $('#output1').text('Number of rows: ' + rowCount);
+            $('#output2').text('Number of columns: ' + colCount);
+        });
+    </script>
+</head>
+<body>
+    <table id="myTable">
+        <tr>
+            <th>Weather</th>
+            <th><span></span></th>
+            <th>Temprature</th>
+            <th><span></span></th>
+            <th>Wind</th>
+            <th><span></span></th>
+        </tr>
+        <tr>
+            <td>Sunny</td>
+            <th><span></span></th>
+            <td>Hot</td>
+            <th><span></span></th>
+            <td>Strong</td>
+        </tr>
+        <tr>
+            <td>Overcast</td>
+            <th><span></span></th>
+            <td>Cool</td>
+            <th><span></span></th>
+            <td>Weak</td>
+        </tr>
+        <tr>
+            <td>Rainy</td>
+            <td>Mild</td>
+            <td>Strong</td>
+    </table>
+    <br>
+    <p id="output1"></p>
+    <p id="output2"></p>
+</body>
+</html>
+    
+           
